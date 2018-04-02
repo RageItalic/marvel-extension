@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First Extension</title>
+  <style type="text/css">
+    body {
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+      background: linear-gradient(#e41e35,#a5131c);
+      white-space: nowrap;
+      height: 700px;
+      width: 350px;
+      overflow-y: scroll;
+    }
+
+    #container{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+  <section class="section">
+    <div class="container has-text-centered">
+      <h1 class="title is-4">Marvel Movie Countdown</h1>
+      <hr />
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="http://cdn.collider.com/wp-content/uploads/2017/11/black-panther-poster.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Black Panther</strong>
+                <br />
+                <small><b>Feb 16, 2018</b></small>
+                <small><a href="https://www.youtube.com/watch?v=xjDjIWPwcPU" target="_blank">Trailer</a></small>
+                <p><b id="panther"></b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://news.marvel.com/wp-content/uploads/2017/11/MLou_Teaser_1-Sht_v1_Lg.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Avengers: Infinity War</strong>
+                <br />
+                <small><b>April 27, 2018</b></small>
+                <small><a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" target="_blank">Trailer</a></small>
+                <p><b id="infinity"></b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNWM4MWExOTUtNDk1MS00YmRhLWI0NzItZmY3MDE2ZjZkOGIwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR3,0,182,268_AL_.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Ant-Man &amp; The Wasp </strong>
+                <br />
+                <small><b>July 6, 2018</b></small>
+                <small><a href="https://www.youtube.com/watch?v=fmrdsRdYZlg" target="_blank">Trailer</a></small>
+                <p><b id="ant"></b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://i.redd.it/omdyjp5kvlgx.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Captain Marvel</strong>
+                <br />
+                <small><b>March 8, 2019</b></small><!--
+                <small><a href="">Trailer</a></small> -->
+                <p><b id="captain"></b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://cdn.images.express.co.uk/img/dynamic/36/590x/secondary/Avengers-4-set-pictures-Captain-America-and-Iron-Man-1192713.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Untitled Avengers</strong>
+                <br />
+                <small><b>May 3, 2019</b></small>
+                <!-- <small><a href="">Trailer</a></small> -->
+                <p><b id="avengers4"></b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="http://static.metacritic.com/images/products/movies/0/1c822c7ea87159926b563ccc050d0727-250h.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Untitled Spiderman</strong>
+                <br />
+                <small><b>July 5, 2019</b></small>
+                <p><b id="spider2">Coming Soon</b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-64x64">
+              <img src="https://static0.srcdn.com/wp-content/uploads/2017/04/Guardians-of-the-Galaxy-Vol-3-Logo-by-Rob-Keyes.jpg" alt="Image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>GOTG Vol.3</strong>
+                <br />
+                <small><b>2020</b></small>
+                <p><b id="vol3">Coming Soon</b></p>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- <div class="box">
+        <article class="media">
+          <div class="media-content"> -->
+            <!-- <small>
+              Hi! I hope you like using this cool little extension. So, if you want, please consider buying me a cup of coffee through the link down below! It'll help me make this extension better! Thanks!
+            </small> -->
+            <center>
+              <p style="color: white;">Help me make this extension better!</p>
+              <style>.bmc-button img{width: 27px !important;margin-bottom: 3px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 41px !important;height:41px !important;text-decoration: none !important;display:inline-block !important;color:#000000 !important;background-color:#FFFFFF !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9.5px !important;font-size: 24px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;-o-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;margin: 0 auto !important;font-family:"Cookie",sans-serif !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0 4px 16px 0 rgba(190, 190, 190,.45) !important;text-decoration: none !important;box-shadow: 0 4px 16px 0 rgba(190, 190, 190,.45) !important;opacity: 0.85 !important;color:#000000 !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/EsqxPC4wB"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+              <br />
+              <p style="color: white;">Thanks!</p>
+            </center>
+          <!-- </div>
+        </article>
+      </div> -->
+
+
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    function popModal() {
+      alert('triggered')
+      const modal = document.querySelector('.modal');
+      modal.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
